@@ -77,7 +77,7 @@ html2canvas(element, {
        /^data:image\/png/,
        "data:application/octet-stream"
        );
-       downloadURI(newData, "HappyeidfromKad.png");
+       downloadURI(newData, "Eid-MoyaApp.png");
        jQuery(".inputsContainer").remove();
        viewport.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover');
        //location.reload();
