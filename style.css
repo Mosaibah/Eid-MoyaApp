@@ -1,20 +1,18 @@
 :root {
-    --font-base: Scheherazade New;
-    --font-headings: Scheherazade New;
-    --font-input: Scheherazade New;
+    --font-base: 'Tajawal', sans-serif;
+    --font-headings:  'Tajawal', sans-serif;
+    --font-input: 'Tajawal', sans-serif;
+    }
+    *{
+        font-family: 'Tajawal', sans-serif !important;
     }
     body, #content, .entry-content, .post-content, .page-content, .post-excerpt, .entry-summary, .entry-excerpt, .widget-area, .widget, .sidebar, #sidebar, footer, .footer, #footer, .site-footer {
-    font-family: "Scheherazade New";
-     }
+        font-family: 'Tajawal', sans-serif;     }
     #site-title, .site-title, #site-title a, .site-title a, .entry-title, .entry-title a, h1, h2, h3, h4, h5, h6, .widget-title {
-    font-family: "Scheherazade New";
-     }
+        font-family: 'Tajawal', sans-serif;     }
     button, .button, input, select, textarea, .wp-block-button, .wp-block-button__link {
-    font-family: "Scheherazade New";
-     }
-        </style>
-        <!-- Fonts Plugin CSS -->
-        <style type="text/css" data-type="vc_custom-css">.vc_column_container > .vc_column-inner {
+        font-family: 'Tajawal', sans-serif;     }
+    .vc_column_container > .vc_column-inner {
       padding: 0;
     }
     
@@ -35,12 +33,10 @@
     }
     
     .arFontFamily {
-      font-family: Davat,Tahoma;
-    }
+        font-family: 'Tajawal', sans-serif;    }
     
     .enFontFamily {
-      font-family: Davat,Futura,Tahoma;
-    }
+        font-family: 'Tajawal', sans-serif;    }
     
     .inputsContainer {
       width: 600px;
@@ -82,7 +78,7 @@
       -webkit-box-align: center;
       align-items: center;
       padding: 15px;
-      bottom: 3%;
+      bottom: 7%;
     }
     .resultContainer2 {
       margin: auto;
@@ -102,7 +98,7 @@
       -webkit-box-align: center;
       align-items: center;
       padding: 15px;
-      bottom: 13%;
+      bottom: 17%;
     }
     .result {
       display: flex;
