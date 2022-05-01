@@ -66,7 +66,7 @@ for (const a of resultSpan ) {
 //var bottomText = jQuery(element).find(".result1").css("bottom");
 //jQuery(element).css("width", "100%");
 
-jQuery(element).find(".resultContainer1").css("bottom", "7%");
+jQuery(element).find(".resultContainer1").css("bottom", "8%");
 jQuery(element).find(".resultContainer2").css("bottom", "17%");
 
 viewport.setAttribute('content', '');
