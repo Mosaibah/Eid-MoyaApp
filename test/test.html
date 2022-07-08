@@ -1,0 +1,71 @@
+<head>
+    <style>
+        #capture {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.center {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+    </style>
+</head>
+<body>
+    <input oninput="UpdateName()" class="d-block m-auto w-50 form-control" id="name" type="text" placeholder="الاسم" autocomplete="off" />
+    <input  class="d-block m-auto w-50 mt-3 form-control" id="job" type="text" placeholder="الوظيفة (اختياري)" autocomplete="off" />
+            
+    <a href="#" class="btn btn-block btn-primary mb-3" id="btnDownload">Download</a>
+
+    <div id="capture" >
+        <img src="../post2.png" width="300" height="">
+        <h4 id="fName" class="center" style="color: #ffffff">Hello world!</h4>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <script src="html2canvas.min.js"></script>
+    <script>
+        // html2canvas(document.querySelector("#capture")).then((canvas) => {
+        //     canvas.toDataURL("image/png")
+
+        // });
+
+        // const name = document.getElementById("name")
+        // name.addEventListener('change', (e) => {
+        //     console.log(e.target.value)
+        // })
+        const fName = document.getElementById("fName")
+        function UpdateName(){
+            var name = document.getElementById("name").value;
+            fName.innerHTML = name
+            console.log(name)
+        }
+
+        function download(url){
+            var a = $("<a style='display:none' id='js-downloder'>")
+            .attr("href", url)
+            .attr("download", "test.png")
+            .appendTo("body");
+
+            a[0].click();
+
+            a.remove();
+        }
+
+        function saveCapture(element) {
+        html2canvas(element).then(function(canvas) {
+            download(canvas.toDataURL("image/png"));
+        })
+        }
+
+        $('#btnDownload').click(function(){
+        var element = document.querySelector("#capture");
+        saveCapture(element)
+        })
+    </script>
+
+</body>
