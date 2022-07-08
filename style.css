@@ -162,3 +162,27 @@ textarea,
   max-width: 100%;
   max-height: 100%;
 }
+
+#capture {
+position: relative;
+text-align: center;
+color: white;
+}
+
+#imageName {
+position: absolute;
+top: 62%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #fff;
+font-size: 3.1vh;
+}
+
+#imageJob {
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #2A60A1;
+  font-size: 2vh;
+  }

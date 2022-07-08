@@ -38,34 +38,7 @@
         // name.addEventListener('change', (e) => {
         //     console.log(e.target.value)
         // })
-        const fName = document.getElementById("fName")
-        function UpdateName(){
-            var name = document.getElementById("name").value;
-            fName.innerHTML = name
-            console.log(name)
-        }
-
-        function download(url){
-            var a = $("<a style='display:none' id='js-downloder'>")
-            .attr("href", url)
-            .attr("download", "test.png")
-            .appendTo("body");
-
-            a[0].click();
-
-            a.remove();
-        }
-
-        function saveCapture(element) {
-        html2canvas(element).then(function(canvas) {
-            download(canvas.toDataURL("image/png"));
-        })
-        }
-
-        $('#btnDownload').click(function(){
-        var element = document.querySelector("#capture");
-        saveCapture(element)
-        })
+       
     </script>
 
 </body>
