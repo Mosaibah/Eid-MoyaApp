@@ -12,9 +12,10 @@ function UpdateJob(){
 }
 
 function download(url){
+  var name = document.getElementById("inputName").value;
     var a = $("<a style='display:none' id='js-downloder'>")
     .attr("href", url)
-    .attr("download", "test.png")
+    .attr("download", `من العايدين ${name}.png`)
     .appendTo("body");
 
     a[0].click();
