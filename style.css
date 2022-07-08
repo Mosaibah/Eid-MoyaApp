@@ -2,15 +2,17 @@
   font-family: Ithra-Bold;
   src: url(ArbFONTS-Ithra-Bold.ttf);
 }
-
+/* 
 :root {
   --font-base: "Tajawal", sans-serif;
   --font-headings: "Tajawal", sans-serif;
   --font-input: "Tajawal", sans-serif;
 }
+*/
 * {
   font-family: Ithra-Bold, "Tajawal", sans-serif !important;
 }
+/*
 body,
 #content,
 .entry-content,
@@ -161,12 +163,19 @@ textarea,
 .companyImage {
   max-width: 100%;
   max-height: 100%;
-}
+} */
 
 #capture {
 position: relative;
 text-align: center;
 color: white;
+padding: 0px;
+height: auto;
+width: 100%;
+min-width: 1150px;
+margin-top: 0;
+margin-right: auto;
+margin-left: auto;
 }
 
 #imageName {
@@ -176,6 +185,8 @@ left: 50%;
 transform: translate(-50%, -50%);
 color: #fff;
 font-size: 3.1vh;
+font-family: Ithra-Bold, "Tajawal", sans-serif !important;
+
 }
 
 #imageJob {
@@ -185,4 +196,6 @@ font-size: 3.1vh;
   transform: translate(-50%, -50%);
   color: #2A60A1;
   font-size: 2vh;
+  font-family: Ithra-Bold, "Tajawal", sans-serif !important;
+
   }

@@ -32,3 +32,4 @@ $('#btnDownload').click(function(){
 var element = document.querySelector("#capture");
 saveCapture(element)
 })
+
